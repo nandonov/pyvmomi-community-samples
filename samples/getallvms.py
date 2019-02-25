@@ -69,7 +69,7 @@ def main():
 
     try:
         if args.disable_ssl_verification:
-            context = ssl.SSLContext(ssl.PROTOCOL_TLSv123)
+            context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
             context.verify_mode = ssl.CERT_NONE
             service_instance = connect.SmartConnectNoSSL(host=args.host,
                                                          user=args.user,
