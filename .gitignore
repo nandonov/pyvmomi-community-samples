@@ -61,3 +61,31 @@ docs/_build/
 
 # ignore flight recorder YAML file
 */hello_world_vcenter.yaml
+venv/pip-selfcheck.json
+venv/pyvenv.cfg
+venv/Scripts/Activate.ps1
+venv/Scripts/activate
+venv/Scripts/activate.bat
+venv/Scripts/chardetect.exe
+venv/Scripts/deactivate.bat
+venv/Scripts/easy_install.exe
+venv/Scripts/easy_install-3.7.exe
+venv/Scripts/easy_install-3.7-script.py
+venv/Scripts/easy_install-script.py
+venv/Scripts/pip.exe
+venv/Scripts/pip-script.py
+venv/Scripts/pip3.exe
+venv/Scripts/pip3-script.py
+venv/Scripts/pip3.7.exe
+venv/Scripts/pip3.7-script.py
+venv/Scripts/pyflakes.exe
+venv/Scripts/pygmentize.exe
+venv/Scripts/python.exe
+venv/Scripts/pythonw.exe
+venv/Scripts/pyvim.exe
+venv/Scripts/pylint.exe
+venv/Scripts/epylint.exe
+venv/Scripts/isort.exe
+venv/Scripts/pyreverse.exe
+venv/Scripts/symilar.exe
+.vscode/settings.json
