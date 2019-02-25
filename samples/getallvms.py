@@ -26,8 +26,6 @@ from pyVmomi import vim
 
 import tools.cli as cli
 
-import ssl
-
 def print_vm_info(virtual_machine):
     """
     Print information for a particular virtual machine or recurse into a
@@ -69,13 +67,10 @@ def main():
 
     try:
         if args.disable_ssl_verification:
-            context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
-            context.verify_mode = ssl.CERT_NONE
             service_instance = connect.SmartConnectNoSSL(host=args.host,
                                                          user=args.user,
                                                          pwd=args.password,
-                                                         port=int(args.port),
-                                                         sslContext=context)
+                                                         port=int(args.port))
         else:
             service_instance = connect.SmartConnect(host=args.host,
                                                     user=args.user,
